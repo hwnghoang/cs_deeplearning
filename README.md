@@ -13,7 +13,7 @@ cs_deeplearning/
 +-- E3/                  # Exercise 3 PyTorch implementation
 +-- datasets/            # Datasets folder (ignored by Git)
 +-- reports/             # PDF reports and documentation
-¦   +-- exercises.pdf    # Combined coursework report (E1–E3)
+   +-- exercises.pdf    # Combined coursework report (E1 to E3)
 +-- .gitignore           # Git ignore rules (venv, kaggle.json, datasets)
 +-- README.md            # Project documentation and instructions
 +-- requirements.txt     # Python dependency configuration
