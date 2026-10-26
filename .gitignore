@@ -10,3 +10,4 @@ datasets/
 *.csv
 *.gz
 data/
+docs/
