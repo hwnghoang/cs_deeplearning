@@ -11,3 +11,5 @@ datasets/
 *.gz
 data/
 docs/
+!A1/results/*.csv
+!A1/docs/
