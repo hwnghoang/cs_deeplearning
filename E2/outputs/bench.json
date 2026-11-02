@@ -1,0 +1,32 @@
+{
+ "patch/scratch": {
+  "ms_per_step": 69.5,
+  "est_s_per_epoch": 29.9,
+  "infer_img_per_s": 7996
+ },
+ "patch/torch": {
+  "ms_per_step": 69.1,
+  "est_s_per_epoch": 29.7,
+  "infer_img_per_s": 9006
+ },
+ "row/scratch": {
+  "ms_per_step": 43.0,
+  "est_s_per_epoch": 18.5,
+  "infer_img_per_s": 15951
+ },
+ "row/torch": {
+  "ms_per_step": 43.9,
+  "est_s_per_epoch": 18.9,
+  "infer_img_per_s": 18742
+ },
+ "cnn_stem/scratch": {
+  "ms_per_step": 107.3,
+  "est_s_per_epoch": 46.2,
+  "infer_img_per_s": 4550
+ },
+ "cnn_stem/torch": {
+  "ms_per_step": 104.4,
+  "est_s_per_epoch": 44.9,
+  "infer_img_per_s": 4528
+ }
+}

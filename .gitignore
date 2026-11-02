@@ -10,3 +10,7 @@ datasets/
 *.csv
 *.gz
 data/
+docs/
+!A1/results/*.csv
+!A1/docs/
+!A2/docs/
