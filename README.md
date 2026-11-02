@@ -16,7 +16,7 @@
 | E2   | Exercise 2                              | [E2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/E2) | [exercises.pdf](https://github.com/hwnghoang/cs_deeplearning/blob/main/reports/exercises.pdf)           |
 | E3   | Exercise 3                              | [E3/](https://github.com/hwnghoang/cs_deeplearning/tree/main/E3) | [exercises.pdf](https://github.com/hwnghoang/cs_deeplearning/blob/main/reports/exercises.pdf)           |
 | A1   | CNN vs Transformer trên tập ảnh lớn | [A1/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A1) | [A1.1 protocol (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.1_protocol.pdf) |
-| A2   | Sắp cập nhật                         | —                                                              | —                                                                                                     |
+| A2   | Phát hiện đối tượng: Faster R-CNN vs DETR | [A2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A2) | [A2.1 proposal (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.pdf) |
 
 ---
 
@@ -48,6 +48,36 @@ So sánh một mô hình CNN và một mô hình Transformer trên tập ảnh F
 | Pretrained + full finetune                                 | ✓        | ✓     |
 
 Nội dung sẽ cập nhật ở A1.2: EDA/dataset, DataLoader và augmentation, protocol thí nghiệm, kết quả so sánh, thảo luận.
+
+---
+
+## A2 — Phát hiện đối tượng: Faster R-CNN vs DETR
+
+So sánh một detector CNN dùng anchor và NMS (Faster R-CNN) với một detector Transformer dự đoán tập hợp (DETR) trên Pascal VOC 2007, và phân tích paper DETR.
+
+|                 |                                                                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **Chủ đề**      | Phát hiện đối tượng (bounding box + lớp)                                                                                                  |
+| **Paper**       | N. Carion et al., *End-to-End Object Detection with Transformers*, ECCV 2020 — [arXiv:2005.12872](https://arxiv.org/abs/2005.12872) · [code](https://github.com/facebookresearch/detr) |
+| **Dataset**     | [Pascal VOC 2007](http://host.robots.ox.ac.uk/pascal/VOC/voc2007/) — 20 lớp; trainval 5.011 ảnh (chia 90/10 train/val), test 4.952 ảnh |
+| **Metric**      | mAP@0.5 (chính), mAP@0.5:0.95, AP_S / AP_M / AP_L, FPS                                                                                     |
+| **Mô hình**     | Faster R-CNN ResNet-50-FPN (`torchvision`) · DETR ResNet-50 (`detr-main`)                                                                 |
+| **Code**        | [A2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A2)                                                                          |
+
+### Các mốc
+
+| Mốc  | Nội dung                         | Hạn        | Tài liệu |
+| ---- | -------------------------------- | ---------- | -------- |
+| A2.1 | Chủ đề, paper, dữ liệu, metric, kế hoạch | 02/11/2026 | [Proposal (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.pdf) · [Proposal (Markdown)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.md) |
+| A2.2 | Pipeline, so sánh, phân tích paper | 16/11/2026 | Sắp cập nhật |
+
+### Các biến thể
+
+| #  | Mô hình | Khởi tạo |
+| -- | ------- | -------- |
+| V1 | Faster R-CNN R50-FPN | Checkpoint COCO |
+| V2 | DETR R50 | Checkpoint COCO |
+| V3 | DETR R50 | Chỉ backbone ImageNet |
 
 ---
 
