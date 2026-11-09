@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[deit_s_linear] trainable 38,885 / 21,704,549 params, 10100 train images, 785 steps, warm-up 78, amp=True
+[deit_s_linear] ep 01/5 train 3.785/0.2298  val 2.394/0.4728  52s
+[deit_s_linear] ep 02/5 train 2.702/0.4709  val 1.939/0.5446  27s
+[deit_s_linear] ep 03/5 train 2.478/0.5268  val 1.818/0.5678  27s
+[deit_s_linear] ep 04/5 train 2.379/0.5578  val 1.772/0.5777  25s
+[deit_s_linear] ep 05/5 train 2.346/0.5662  val 1.766/0.5777  25s
+[deit_s_linear] TEST top1 0.6069 top5 0.8646 macro-F1 0.5987 (best val epoch 4), 157s train, 0.3 GB

@@ -1,0 +1,121 @@
+% bkreport.sty — shared style for A1 reports (compile with XeLaTeX)
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bkreport}[2026/10/26 HCMUT coursework report style]
+
+% ---------- Fonts & language ----------
+\RequirePackage{fontspec}
+\setmainfont{texgyretermes}[
+  Extension      = .otf,
+  UprightFont    = *-regular,
+  BoldFont       = *-bold,
+  ItalicFont     = *-italic,
+  BoldItalicFont = *-bolditalic]
+\setsansfont{texgyreheros}[
+  Extension      = .otf,
+  UprightFont    = *-regular,
+  BoldFont       = *-bold,
+  ItalicFont     = *-italic,
+  BoldItalicFont = *-bolditalic]
+\RequirePackage{babel}
+\babelprovide[import, main]{vietnamese}
+
+% ---------- Page layout ----------
+\RequirePackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.2cm, headheight=14pt]{geometry}
+\RequirePackage{setspace}
+\setstretch{1.2}
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{0pt}
+
+% ---------- Packages ----------
+\RequirePackage{amsmath, amssymb}
+\RequirePackage{graphicx}
+\RequirePackage{xcolor}
+\RequirePackage{booktabs, tabularx, array, multirow}
+\RequirePackage{caption}
+\RequirePackage{subcaption}
+\RequirePackage{enumitem}
+\RequirePackage{listings}
+\RequirePackage{float}
+\RequirePackage{fancyhdr}
+\RequirePackage[numbers, sort&compress]{natbib}
+\RequirePackage{hyperref}
+
+\definecolor{bkblue}{RGB}{3, 46, 125}
+\definecolor{codebg}{RGB}{245, 245, 245}
+
+\hypersetup{colorlinks=true, linkcolor=bkblue, citecolor=bkblue, urlcolor=bkblue}
+
+\captionsetup{font=small, labelfont=bf}
+\setlist{nosep, leftmargin=1.5em}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{codebg},
+  frame=single, rulecolor=\color{black!20},
+  columns=fullflexible, keepspaces=true,
+  breaklines=true, aboveskip=0.6em, belowskip=0.6em,
+  xleftmargin=0.5em, xrightmargin=0.5em}
+
+% ---------- Header / footer ----------
+\newcommand{\reporttitleshort}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Trường Đại học Bách Khoa -- Khoa KH\&KT Máy tính}
+\fancyhead[R]{\small \reporttitleshort}
+\fancyfoot[C]{\small Trang \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ---------- Shortcuts ----------
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+
+% ---------- Group information (edit once, used by all reports) ----------
+\newcommand{\coursename}{Học sâu và ứng dụng trong thị giác máy tính}
+\newcommand{\coursecode}{CO5085}
+\newcommand{\semester}{Học kỳ 261 (2026--2027)}
+\newcommand{\lecturer}{Lê Thành Sách, Nguyễn Quốc Minh}
+\newcommand{\groupname}{Hummingbird}
+\newcommand{\members}{%
+  Nguyễn Lê Hoàng Hưng & 2570214 \\
+  Nguyễn Thị Linh Trang & 2570344 \\}
+
+% ---------- Cover page ----------
+% \makecover{<report title>}{<subtitle>}{<date line>}
+\newcommand{\makecover}[3]{%
+  \begin{titlepage}
+    \centering
+    {\large\bfseries ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH\par}
+    {\large\bfseries TRƯỜNG ĐẠI HỌC BÁCH KHOA\par}
+    {\large\bfseries KHOA KHOA HỌC VÀ KỸ THUẬT MÁY TÍNH\par}
+    \vspace{1.5cm}
+    \IfFileExists{figures/logo_bk.png}{%
+      \includegraphics[width=4cm]{figures/logo_bk.png}\par}{%
+      \vspace{3cm}}
+    \vspace{1.5cm}
+    {\Large \coursename\ (\coursecode)\par}
+    \vspace{0.3cm}
+    {\large \semester\par}
+    \vspace{1.2cm}
+    \rule{\linewidth}{0.8pt}\par\vspace{0.4cm}
+    {\LARGE\bfseries\color{bkblue} #1\par}
+    \vspace{0.3cm}
+    {\Large #2\par}
+    \vspace{0.3cm}
+    \rule{\linewidth}{0.8pt}\par
+    \vspace{1.5cm}
+    \begin{tabular}{ll}
+      \textbf{Giảng viên:} & \lecturer \\[0.4em]
+      \textbf{Nhóm:}       & \groupname \\[0.4em]
+    \end{tabular}\par
+    \vspace{0.5cm}
+    \begin{tabular}{|l|c|}
+      \hline
+      \textbf{Họ và tên} & \textbf{MSSV} \\ \hline
+      \members \hline
+    \end{tabular}\par
+    \vfill
+    {\large #3\par}
+  \end{titlepage}}
+
+\endinput
