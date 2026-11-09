@@ -15,7 +15,7 @@
 | E1   | Exercise 1                              | [E1/](https://github.com/hwnghoang/cs_deeplearning/tree/main/E1) | [exercises.pdf](https://github.com/hwnghoang/cs_deeplearning/blob/main/reports/exercises.pdf)           |
 | E2   | Exercise 2                              | [E2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/E2) | [exercises.pdf](https://github.com/hwnghoang/cs_deeplearning/blob/main/reports/exercises.pdf)           |
 | E3   | Exercise 3                              | [E3/](https://github.com/hwnghoang/cs_deeplearning/tree/main/E3) | [exercises.pdf](https://github.com/hwnghoang/cs_deeplearning/blob/main/reports/exercises.pdf)           |
-| A1   | CNN vs Transformer trên tập ảnh lớn | [A1/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A1) | [A1.1 protocol (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.1_protocol.pdf) |
+| A1   | CNN vs Transformer trên tập ảnh lớn | [A1/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A1) | [A1.1 protocol (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.1_protocol.pdf) · [A1.2 report (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.2_report.pdf) |
 | A2   | Phát hiện đối tượng: Faster R-CNN vs DETR | [A2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A2) | [A2.1 proposal (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.pdf) |
 
 ---
@@ -26,7 +26,7 @@ So sánh một mô hình CNN và một mô hình Transformer trên tập ảnh F
 
 |                       |                                                                                                                                                                                                           |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Dataset**     | [Food-101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/) — 101 lớp món ăn; subset 300 ảnh/lớp cho train, 50 ảnh/lớp cho validation, toàn bộ split test chính thức (25.250 ảnh) |
+| **Dataset**     | [Food-101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/) — 101 lớp món ăn; subset 100 ảnh/lớp cho train, 20 ảnh/lớp cho validation, 50 ảnh/lớp từ split test chính thức (5.050 ảnh); protocol A1.1 dự kiến 300/50/250, xem lý do trong báo cáo A1.2 |
 | **CNN**         | ResNet-50 (pretrained ImageNet-1k, `timm`)                                                                                                                                                              |
 | **Transformer** | DeiT-Small / ViT-S/16 (pretrained ImageNet-1k, `timm`)                                                                                                                                                  |
 | **Code**        | [A1/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A1)                                                                                                                                           |
@@ -36,7 +36,7 @@ So sánh một mô hình CNN và một mô hình Transformer trên tập ảnh F
 | Mốc | Nội dung                         | Hạn       | Tài liệu                                                                                                                                                                                                 |
 | ---- | --------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | A1.1 | Dataset và protocol thí nghiệm | 26/10/2026 | [Protocol (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.1_protocol.pdf) · [Protocol (Markdown)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.1_protocol.md) |
-| A1.2 | Kết quả so sánh cuối          | 09/11/2026 | Sắp cập nhật                                                                                                                                                                                            |
+| A1.2 | Kết quả so sánh cuối | 09/11/2026 | [Report (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.2_report.pdf) · [Code và hướng dẫn chạy](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/README.md) |
 
 ### Ma trận thí nghiệm
 

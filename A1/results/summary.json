@@ -1,0 +1,210 @@
+{
+ "errors": {
+  "resnet50": {
+   "run": "resnet50_full",
+   "test_top1": 0.6043564356435643,
+   "top_confusions": [
+    {
+     "true": "steak",
+     "pred": "filet_mignon",
+     "count": 17
+    },
+    {
+     "true": "ramen",
+     "pred": "pho",
+     "count": 10
+    },
+    {
+     "true": "gnocchi",
+     "pred": "shrimp_and_grits",
+     "count": 9
+    },
+    {
+     "true": "pork_chop",
+     "pred": "filet_mignon",
+     "count": 8
+    },
+    {
+     "true": "tuna_tartare",
+     "pred": "beef_tartare",
+     "count": 7
+    },
+    {
+     "true": "steak",
+     "pred": "prime_rib",
+     "count": 7
+    },
+    {
+     "true": "filet_mignon",
+     "pred": "steak",
+     "count": 7
+    },
+    {
+     "true": "filet_mignon",
+     "pred": "prime_rib",
+     "count": 7
+    },
+    {
+     "true": "caesar_salad",
+     "pred": "seaweed_salad",
+     "count": 7
+    },
+    {
+     "true": "bruschetta",
+     "pred": "caprese_salad",
+     "count": 7
+    }
+   ],
+   "worst_classes": [
+    {
+     "class": "apple_pie",
+     "acc": 0.14
+    },
+    {
+     "class": "steak",
+     "acc": 0.14
+    },
+    {
+     "class": "pork_chop",
+     "acc": 0.2
+    },
+    {
+     "class": "huevos_rancheros",
+     "acc": 0.2
+    },
+    {
+     "class": "tuna_tartare",
+     "acc": 0.22
+    }
+   ],
+   "best_classes": [
+    {
+     "class": "hot_and_sour_soup",
+     "acc": 1.0
+    },
+    {
+     "class": "edamame",
+     "acc": 1.0
+    },
+    {
+     "class": "macarons",
+     "acc": 0.9
+    },
+    {
+     "class": "pho",
+     "acc": 0.9
+    },
+    {
+     "class": "dumplings",
+     "acc": 0.88
+    }
+   ]
+  },
+  "deit_s": {
+   "run": "deit_s_full",
+   "test_top1": 0.761980198019802,
+   "top_confusions": [
+    {
+     "true": "steak",
+     "pred": "filet_mignon",
+     "count": 14
+    },
+    {
+     "true": "steak",
+     "pred": "prime_rib",
+     "count": 10
+    },
+    {
+     "true": "ravioli",
+     "pred": "lasagna",
+     "count": 8
+    },
+    {
+     "true": "huevos_rancheros",
+     "pred": "tacos",
+     "count": 8
+    },
+    {
+     "true": "chocolate_cake",
+     "pred": "chocolate_mousse",
+     "count": 8
+    },
+    {
+     "true": "apple_pie",
+     "pred": "bread_pudding",
+     "count": 7
+    },
+    {
+     "true": "ramen",
+     "pred": "pho",
+     "count": 6
+    },
+    {
+     "true": "gyoza",
+     "pred": "dumplings",
+     "count": 6
+    },
+    {
+     "true": "gnocchi",
+     "pred": "scallops",
+     "count": 6
+    },
+    {
+     "true": "filet_mignon",
+     "pred": "prime_rib",
+     "count": 6
+    }
+   ],
+   "worst_classes": [
+    {
+     "class": "steak",
+     "acc": 0.24
+    },
+    {
+     "class": "pork_chop",
+     "acc": 0.4
+    },
+    {
+     "class": "ravioli",
+     "acc": 0.42
+    },
+    {
+     "class": "apple_pie",
+     "acc": 0.44
+    },
+    {
+     "class": "risotto",
+     "acc": 0.46
+    }
+   ],
+   "best_classes": [
+    {
+     "class": "edamame",
+     "acc": 0.98
+    },
+    {
+     "class": "macarons",
+     "acc": 0.96
+    },
+    {
+     "class": "spaghetti_carbonara",
+     "acc": 0.96
+    },
+    {
+     "class": "pho",
+     "acc": 0.94
+    },
+    {
+     "class": "oysters",
+     "acc": 0.94
+    }
+   ]
+  }
+ },
+ "eda": {
+  "sampled": 2020,
+  "long_side_max": 512,
+  "long_side_median": 512.0,
+  "share_square": 0.6198019801980198
+ }
+}

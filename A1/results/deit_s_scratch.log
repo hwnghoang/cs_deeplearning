@@ -1,0 +1,12 @@
+[deit_s_scratch] trainable 21,704,549 / 21,704,549 params, 10100 train images, 1570 steps, warm-up 157, amp=True
+[deit_s_scratch] ep 01/10 train 4.645/0.0183  val 4.598/0.0124  113s
+[deit_s_scratch] ep 02/10 train 4.577/0.0260  val 4.480/0.0248  89s
+[deit_s_scratch] ep 03/10 train 4.504/0.0299  val 4.335/0.0426  89s
+[deit_s_scratch] ep 04/10 train 4.454/0.0388  val 4.272/0.0550  89s
+[deit_s_scratch] ep 05/10 train 4.409/0.0425  val 4.203/0.0554  89s
+[deit_s_scratch] ep 06/10 train 4.346/0.0521  val 4.143/0.0653  89s
+[deit_s_scratch] ep 07/10 train 4.307/0.0590  val 4.056/0.0832  89s
+[deit_s_scratch] ep 08/10 train 4.244/0.0767  val 4.020/0.0946  89s
+[deit_s_scratch] ep 09/10 train 4.180/0.0867  val 3.960/0.0995  89s
+[deit_s_scratch] ep 10/10 train 4.147/0.0905  val 3.951/0.0990  89s
+[deit_s_scratch] TEST top1 0.1101 top5 0.3032 macro-F1 0.0799 (best val epoch 9), 915s train, 2.4 GB

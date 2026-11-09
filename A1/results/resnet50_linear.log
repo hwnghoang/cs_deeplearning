@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[resnet50_linear] trainable 206,949 / 23,714,981 params, 10100 train images, 785 steps, warm-up 78, amp=True
+[resnet50_linear] ep 01/5 train 4.316/0.1576  val 3.700/0.3644  53s
+[resnet50_linear] ep 02/5 train 3.603/0.3976  val 3.086/0.4416  22s
+[resnet50_linear] ep 03/5 train 3.241/0.4488  val 2.822/0.4708  23s
+[resnet50_linear] ep 04/5 train 3.087/0.4843  val 2.728/0.4861  25s
+[resnet50_linear] ep 05/5 train 3.041/0.4969  val 2.715/0.4847  24s
+[resnet50_linear] TEST top1 0.5285 top5 0.8091 macro-F1 0.5100 (best val epoch 4), 146s train, 2.7 GB

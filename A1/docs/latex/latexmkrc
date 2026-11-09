@@ -1,0 +1,2 @@
+# Force XeLaTeX (needed for Vietnamese fonts). Overleaf reads this file.
+$pdf_mode = 5;

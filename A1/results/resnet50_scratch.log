@@ -1,0 +1,12 @@
+[resnet50_scratch] trainable 23,714,981 / 23,714,981 params, 10100 train images, 1570 steps, warm-up 157, amp=True
+[resnet50_scratch] ep 01/10 train 4.605/0.0264  val 4.649/0.0292  139s
+[resnet50_scratch] ep 02/10 train 4.449/0.0474  val 4.200/0.0772  76s
+[resnet50_scratch] ep 03/10 train 4.360/0.0578  val 4.141/0.0866  74s
+[resnet50_scratch] ep 04/10 train 4.297/0.0697  val 4.054/0.0936  73s
+[resnet50_scratch] ep 05/10 train 4.258/0.0760  val 3.993/0.0995  73s
+[resnet50_scratch] ep 06/10 train 4.184/0.0880  val 3.881/0.1173  75s
+[resnet50_scratch] ep 07/10 train 4.106/0.0975  val 3.805/0.1322  75s
+[resnet50_scratch] ep 08/10 train 4.039/0.1170  val 3.689/0.1436  75s
+[resnet50_scratch] ep 09/10 train 3.957/0.1301  val 3.615/0.1634  75s
+[resnet50_scratch] ep 10/10 train 3.921/0.1386  val 3.597/0.1624  73s
+[resnet50_scratch] TEST top1 0.1780 top5 0.4077 macro-F1 0.1481 (best val epoch 9), 808s train, 6.5 GB
