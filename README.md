@@ -93,7 +93,12 @@ cs_deeplearning/
 +-- E3/                  # Exercise 3 PyTorch implementation
 +-- A1/                  # Assignment 1: CNN vs Transformer
 |   +-- docs/            # Protocol A1.1, báo cáo A1.2
-+-- datasets/            # Datasets folder (ignored by Git)
++-- A2/                  # Assignment 2: Faster R-CNN vs DETR (phát hiện đối tượng)
+|   +-- src/             # Dữ liệu VOC, mô hình, train, metric, ablation, hình
+|   +-- third_party/     # Mã nguồn chính thức của DETR (facebookresearch/detr)
+|   +-- results/         # Kết quả, log và hình của các thí nghiệm
+|   +-- docs/            # Proposal A2.1, báo cáo A2.2
++-- data/                # Datasets: Food-101, VOC 2007 (ignored by Git)
 +-- reports/             # PDF reports and documentation
 |   +-- exercises.pdf    # Combined coursework report (E1-E3)
 +-- .gitignore           # Git ignore rules (venv, kaggle.json, datasets)
