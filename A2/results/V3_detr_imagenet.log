@@ -1,0 +1,26 @@
+D:\cs_master\sem3\deeplearning\cs_deeplearning\.venv\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\cs_master\sem3\deeplearning\cs_deeplearning\.venv\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[V3_detr_imagenet] detr/imagenet: trainable 41,284,121 / 41,506,521, 4510 train images, 20 epochs, lr drop after 15, amp=False
+[V3_detr_imagenet] ep 01/20 loss 25.341  val mAP@0.5 0.00  524s
+[V3_detr_imagenet] ep 02/20 loss 21.167  val mAP@0.5 0.00  506s
+[V3_detr_imagenet] ep 03/20 loss 20.411  val mAP@0.5 0.00  505s
+[V3_detr_imagenet] ep 04/20 loss 19.916  val mAP@0.5 0.02  503s
+[V3_detr_imagenet] ep 05/20 loss 19.338  val mAP@0.5 0.33  507s
+[V3_detr_imagenet] ep 06/20 loss 18.905  val mAP@0.5 0.86  510s
+[V3_detr_imagenet] ep 07/20 loss 18.576  val mAP@0.5 0.84  503s
+[V3_detr_imagenet] ep 08/20 loss 18.205  val mAP@0.5 1.51  506s
+[V3_detr_imagenet] ep 09/20 loss 17.931  val mAP@0.5 1.64  508s
+[V3_detr_imagenet] ep 10/20 loss 17.570  val mAP@0.5 2.11  507s
+[V3_detr_imagenet] ep 11/20 loss 17.382  val mAP@0.5 2.29  506s
+[V3_detr_imagenet] ep 12/20 loss 17.245  val mAP@0.5 1.85  509s
+[V3_detr_imagenet] ep 13/20 loss 16.967  val mAP@0.5 3.42  504s
+[V3_detr_imagenet] ep 14/20 loss 16.642  val mAP@0.5 3.64  507s
+[V3_detr_imagenet] ep 15/20 loss 16.519  val mAP@0.5 2.65  509s
+[V3_detr_imagenet] ep 16/20 loss 15.380  val mAP@0.5 3.87  507s
+[V3_detr_imagenet] ep 17/20 loss 14.994  val mAP@0.5 4.06  505s
+[V3_detr_imagenet] ep 18/20 loss 14.908  val mAP@0.5 4.22  507s
+[V3_detr_imagenet] ep 19/20 loss 14.775  val mAP@0.5 4.35  504s
+[V3_detr_imagenet] ep 20/20 loss 14.629  val mAP@0.5 4.20  506s
+[V3_detr_imagenet] TEST mAP@0.5 2.81 (VOC07 11-pt 5.10)  AP 1.00  APs/m/l 0.0/0.1/1.4  28.2 FPS  best epoch 19

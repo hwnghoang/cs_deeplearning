@@ -16,7 +16,7 @@
 | E2   | Exercise 2                              | [E2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/E2) | [exercises.pdf](https://github.com/hwnghoang/cs_deeplearning/blob/main/reports/exercises.pdf)           |
 | E3   | Exercise 3                              | [E3/](https://github.com/hwnghoang/cs_deeplearning/tree/main/E3) | [exercises.pdf](https://github.com/hwnghoang/cs_deeplearning/blob/main/reports/exercises.pdf)           |
 | A1   | CNN vs Transformer trên tập ảnh lớn | [A1/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A1) | [A1.1 protocol (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.1_protocol.pdf) · [A1.2 report (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A1/docs/A1.2_report.pdf) |
-| A2   | Phát hiện đối tượng: Faster R-CNN vs DETR | [A2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A2) | [A2.1 proposal (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.pdf) |
+| A2   | Phát hiện đối tượng: Faster R-CNN vs DETR | [A2/](https://github.com/hwnghoang/cs_deeplearning/tree/main/A2) | [A2.1 proposal (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.pdf) · [A2.2 report (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.2_report.pdf) |
 
 ---
 
@@ -69,15 +69,18 @@ So sánh một detector CNN dùng anchor và NMS (Faster R-CNN) với một dete
 | Mốc  | Nội dung                         | Hạn        | Tài liệu |
 | ---- | -------------------------------- | ---------- | -------- |
 | A2.1 | Chủ đề, paper, dữ liệu, metric, kế hoạch | 02/11/2026 | [Proposal (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.pdf) · [Proposal (Markdown)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.1_proposal.md) |
-| A2.2 | Pipeline, so sánh, phân tích paper | 16/11/2026 | Sắp cập nhật |
+| A2.2 | Pipeline, so sánh, phân tích paper | 16/11/2026 | [Report (PDF)](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/docs/A2.2_report.pdf) · [Code và hướng dẫn chạy](https://github.com/hwnghoang/cs_deeplearning/blob/main/A2/README.md) |
 
-### Các biến thể
+### Kết quả (VOC 2007 test, 4.952 ảnh)
 
-| #  | Mô hình | Khởi tạo |
-| -- | ------- | -------- |
-| V1 | Faster R-CNN R50-FPN | Checkpoint COCO |
-| V2 | DETR R50 | Checkpoint COCO |
-| V3 | DETR R50 | Chỉ backbone ImageNet |
+| #  | Mô hình | Khởi tạo | Epoch | mAP@0.5 | AP@[.5:.95] | AP_S | AP_L | FPS (GTX 1070) |
+| -- | ------- | -------- | ----- | ------- | ----------- | ---- | ---- | -------------- |
+| V1 | Faster R-CNN R50-FPN | Checkpoint COCO | 10 | 84,6 | 56,0 | 26,5 | 60,8 | 17,5 |
+| V2 | DETR R50 | Checkpoint COCO | 20 | **86,1** | **63,0** | 20,6 | **71,7** | **28,3** |
+| V5 | Faster R-CNN R50-FPN | Chỉ backbone ImageNet | 10 | 76,4 | 42,9 | 16,5 | 47,0 | 17,5 |
+| V3 | DETR R50 | Chỉ backbone ImageNet | 20 | 2,8 | 1,0 | 0,0 | 1,4 | 28,2 |
+
+Kết quả tái hiện các nhận định chính của paper: DETR tốt hơn ở vật lớn, kém ở vật nhỏ, nhanh hơn khi suy luận vì không cần NMS, và hội tụ rất chậm khi Transformer không được pretrain cho bài toán phát hiện.
 
 ---
 

@@ -14,3 +14,6 @@ docs/
 !A1/results/*.csv
 !A1/docs/
 !A2/docs/
+A2/checkpoints/
+A2/weights/
+A2/docs/A2.2_explanation.md

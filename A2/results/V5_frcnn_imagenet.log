@@ -1,0 +1,12 @@
+[V5_frcnn_imagenet] frcnn/imagenet: trainable 41,174,136 / 41,396,536, 4510 train images, 10 epochs, lr drop after 7, amp=False
+[V5_frcnn_imagenet] ep 01/10 loss 0.705  val mAP@0.5 20.60  691s
+[V5_frcnn_imagenet] ep 02/10 loss 0.557  val mAP@0.5 43.05  671s
+[V5_frcnn_imagenet] ep 03/10 loss 0.502  val mAP@0.5 50.19  673s
+[V5_frcnn_imagenet] ep 04/10 loss 0.464  val mAP@0.5 57.26  670s
+[V5_frcnn_imagenet] ep 05/10 loss 0.436  val mAP@0.5 50.23  674s
+[V5_frcnn_imagenet] ep 06/10 loss 0.422  val mAP@0.5 61.02  673s
+[V5_frcnn_imagenet] ep 07/10 loss 0.401  val mAP@0.5 64.11  669s
+[V5_frcnn_imagenet] ep 08/10 loss 0.338  val mAP@0.5 73.41  673s
+[V5_frcnn_imagenet] ep 09/10 loss 0.320  val mAP@0.5 74.45  674s
+[V5_frcnn_imagenet] ep 10/10 loss 0.309  val mAP@0.5 75.05  671s
+[V5_frcnn_imagenet] TEST mAP@0.5 76.44 (VOC07 11-pt 74.09)  AP 42.93  APs/m/l 16.5/30.9/47.0  17.5 FPS  best epoch 10

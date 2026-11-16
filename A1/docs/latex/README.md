@@ -6,7 +6,8 @@
 | `bkreport.sty` | Shared style: fonts, cover page, group info (edit group info here once) |
 | `refs.bib` | Shared bibliography |
 | `latexmkrc` | Forces XeLaTeX (required for Vietnamese) |
-| `figures/` | Put `logo_bk.png` and result figures here; missing figures show a grey box |
+| `HCMUT_official_logo.png` | University logo on the cover page |
+| `figures/` | Result figures; missing figures show a grey box |
 
 ## Compile on Overleaf
 1. Zip this folder and upload it as a new project (New Project → Upload Project).
