@@ -1,0 +1,12 @@
+[V1_frcnn_coco] frcnn/coco: trainable 41,174,136 / 41,396,536, 4510 train images, 10 epochs, lr drop after 7, amp=False
+[V1_frcnn_coco] ep 01/10 loss 0.506  val mAP@0.5 66.61  737s
+[V1_frcnn_coco] ep 02/10 loss 0.376  val mAP@0.5 72.53  788s
+[V1_frcnn_coco] ep 03/10 loss 0.342  val mAP@0.5 74.16  804s
+[V1_frcnn_coco] ep 04/10 loss 0.321  val mAP@0.5 75.17  812s
+[V1_frcnn_coco] ep 05/10 loss 0.312  val mAP@0.5 75.85  820s
+[V1_frcnn_coco] ep 06/10 loss 0.296  val mAP@0.5 72.67  811s
+[V1_frcnn_coco] ep 07/10 loss 0.282  val mAP@0.5 73.84  816s
+[V1_frcnn_coco] ep 08/10 loss 0.226  val mAP@0.5 81.33  682s
+[V1_frcnn_coco] ep 09/10 loss 0.210  val mAP@0.5 82.16  686s
+[V1_frcnn_coco] ep 10/10 loss 0.202  val mAP@0.5 82.39  676s
+[V1_frcnn_coco] TEST mAP@0.5 84.63 (VOC07 11-pt 81.33)  AP 56.01  APs/m/l 26.5/42.5/60.8  17.5 FPS  best epoch 10

@@ -1,0 +1,26 @@
+D:\cs_master\sem3\deeplearning\cs_deeplearning\.venv\Lib\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+D:\cs_master\sem3\deeplearning\cs_deeplearning\.venv\Lib\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[V2_detr_coco] detr/coco: trainable 41,284,121 / 41,506,521, 4510 train images, 20 epochs, lr drop after 15, amp=False
+[V2_detr_coco] ep 01/20 loss 8.124  val mAP@0.5 69.15  523s
+[V2_detr_coco] ep 02/20 loss 6.169  val mAP@0.5 77.41  505s
+[V2_detr_coco] ep 03/20 loss 5.801  val mAP@0.5 75.65  505s
+[V2_detr_coco] ep 04/20 loss 5.690  val mAP@0.5 79.22  503s
+[V2_detr_coco] ep 05/20 loss 5.429  val mAP@0.5 80.37  506s
+[V2_detr_coco] ep 06/20 loss 5.305  val mAP@0.5 78.12  511s
+[V2_detr_coco] ep 07/20 loss 5.225  val mAP@0.5 75.31  505s
+[V2_detr_coco] ep 08/20 loss 5.214  val mAP@0.5 80.75  506s
+[V2_detr_coco] ep 09/20 loss 5.046  val mAP@0.5 79.17  507s
+[V2_detr_coco] ep 10/20 loss 4.975  val mAP@0.5 78.88  507s
+[V2_detr_coco] ep 11/20 loss 4.920  val mAP@0.5 78.51  507s
+[V2_detr_coco] ep 12/20 loss 4.884  val mAP@0.5 78.81  509s
+[V2_detr_coco] ep 13/20 loss 4.827  val mAP@0.5 79.24  503s
+[V2_detr_coco] ep 14/20 loss 4.819  val mAP@0.5 78.18  507s
+[V2_detr_coco] ep 15/20 loss 4.699  val mAP@0.5 80.29  509s
+[V2_detr_coco] ep 16/20 loss 4.162  val mAP@0.5 83.65  506s
+[V2_detr_coco] ep 17/20 loss 3.861  val mAP@0.5 84.83  503s
+[V2_detr_coco] ep 18/20 loss 3.748  val mAP@0.5 84.87  505s
+[V2_detr_coco] ep 19/20 loss 3.683  val mAP@0.5 85.89  502s
+[V2_detr_coco] ep 20/20 loss 3.601  val mAP@0.5 85.59  505s
+[V2_detr_coco] TEST mAP@0.5 86.14 (VOC07 11-pt 83.05)  AP 63.01  APs/m/l 20.6/42.2/71.7  28.3 FPS  best epoch 19
